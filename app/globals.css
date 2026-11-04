@@ -170,7 +170,10 @@
   button {
     border-radius: 9999px;
   }
-  .bg-white {
+  .poke-shell .bg-white,
+  .poke-shell .bg-white\/75,
+  .poke-shell .bg-white\/90 {
+    background-color: transparent !important;
     border-radius: 1.25rem;
   }
   img {
