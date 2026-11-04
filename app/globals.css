@@ -167,5 +167,29 @@
   button, input, select {
     font: inherit;
   }
+  button {
+    border-radius: 9999px;
+  }
+  .bg-white {
+    border-radius: 1.25rem;
+  }
+  img {
+    max-width: 100%;
+  }
 }
+
+@keyframes poke-rise {
+  0% { opacity: 0; transform: translateY(18px) scale(.96); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes poke-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgb(229 57 53 / 0.28); }
+  50% { box-shadow: 0 0 0 16px rgb(229 57 53 / 0); }
+}
+.poke-rise { animation: poke-rise .6s cubic-bezier(.22,1,.36,1) both; }
+.poke-pulse { animation: poke-pulse 2s infinite; }
+.lightning-range { appearance: none; height: 12px; border-radius: 999px; background: linear-gradient(90deg, #f7c948, #ef4444); outline: none; transform: skewX(-12deg); }
+.lightning-range::-webkit-slider-thumb { appearance: none; width: 30px; height: 30px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: #f7c948; border: 4px solid white; box-shadow: 0 3px 12px rgb(229 57 53 / .35); cursor: grab; }
+.lightning-range::-moz-range-thumb { width: 30px; height: 30px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: #f7c948; border: 4px solid white; box-shadow: 0 3px 12px rgb(229 57 53 / .35); cursor: grab; }
+
 
