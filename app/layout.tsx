@@ -3,8 +3,8 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Poke Explorer | Busca tu Pokémon',
-  description: 'Busca Pokémon por nombre usando la API pública de PokéAPI.',
+  title: 'PokeOdyssey | Tu aventura Pokémon',
+  description: 'Explora Pokémon, crea entrenadores y organiza tus mochilas con datos de PokéAPI.',
   generator: 'v0.app',
   icons: {
     icon: [
